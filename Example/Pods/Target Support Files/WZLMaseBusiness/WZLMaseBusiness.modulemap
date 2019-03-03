@@ -1,0 +1,6 @@
+framework module WZLMaseBusiness {
+  umbrella header "WZLMaseBusiness-umbrella.h"
+
+  export *
+  module * { export * }
+}
