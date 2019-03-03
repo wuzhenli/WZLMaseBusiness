@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'WZLMaseBusiness_Example' do
+  pod 'WZLMaseBusiness', :path => '../'
+
+  target 'WZLMaseBusiness_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
