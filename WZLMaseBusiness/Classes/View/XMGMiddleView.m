@@ -102,7 +102,7 @@ static XMGMiddleView *_shareInstance;
         [self.middleImageView.layer resumeAnimate];
 
     }else {
-
+        
         UIImage *image = [UIImage imageNamed:@"tabbar_np_play"];
         [self.playBtn setImage:image forState:UIControlStateNormal];
 

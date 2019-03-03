@@ -55,7 +55,8 @@
     self.barStyle = UIBarStyleBlack;
 
     // 设置tabbar 背景图片
-    self.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
+    UIImage *img = [UIImage imageNamed:@"tabbar_bg"];
+    self.backgroundImage = img; //[UIImage imageNamed:@"tabbar_bg"];
 
 
     // 添加一个按钮, 准备放在中间

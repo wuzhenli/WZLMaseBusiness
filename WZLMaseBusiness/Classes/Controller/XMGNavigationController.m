@@ -27,7 +27,7 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-
+    
     // 设置手势代理
     UIGestureRecognizer *gester = self.interactivePopGestureRecognizer;
 //    gester.delegate = self;
@@ -66,7 +66,8 @@
         //        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem customBackItemWithTarget:self action:@selector(back)];
         
         //统一设置返回按钮
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_back_n"] style:0 target:self action:@selector(back)];
+        UIImage *img = [UIImage imageNamed:@"btn_back_n"];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:img style:0 target:self action:@selector(back)];
         viewController.hidesBottomBarWhenPushed = YES;
     }
     

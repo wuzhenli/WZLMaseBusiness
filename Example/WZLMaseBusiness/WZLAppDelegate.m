@@ -10,6 +10,7 @@
 #import "XMGTabBarController.h"
 #import "XMGTabBar.h"
 #import "TestVC.h"
+#import "WZLViewController.h"
 
 @implementation WZLAppDelegate
 
@@ -22,7 +23,7 @@
         [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_download_n" selectedImageName:@"tabbar_download_h" isRequiredNavController:YES];
         [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_me_n" selectedImageName:@"tabbar_me_h" isRequiredNavController:YES];
     }];
-    
+
     XMGTabBar *tabbar = (XMGTabBar *)rootVC.tabBar;
     tabbar.middleClickBlock = ^(BOOL isPlaying) {
         if (isPlaying) {
@@ -31,10 +32,12 @@
             NSLog(@"暂停");
         }
     };
+
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
-    
     
     return YES;
 }

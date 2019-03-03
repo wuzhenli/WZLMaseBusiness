@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WZLMaseBusiness'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WZLMaseBusiness.'
+  s.summary          = '基础业务组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+基础业务组件，e业务
                        DESC
 
   s.homepage         = 'https://github.com/wuzhenli/WZLMaseBusiness'
@@ -33,9 +33,9 @@ TODO: Add long description of the pod here.
   s.source_files = 'WZLMaseBusiness/Classes/**/*'
   s.dependency 'WZLBase/Category'
   
-  # s.resource_bundles = {
-  #   'WZLMaseBusiness' => ['WZLMaseBusiness/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'WZLMaseBusiness' => ['WZLMaseBusiness/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
