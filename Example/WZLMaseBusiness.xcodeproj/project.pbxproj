@@ -215,7 +215,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				6D727619993F5612FC1CFAF8 /* [CP] Embed Pods Frameworks */,
-				100804703C9A83B02B64B74F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,8 +233,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				46EDCFECECAB57CA4B0586F2 /* [CP] Embed Pods Frameworks */,
-				4AADA2178E3920B04987DDCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,58 +300,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		100804703C9A83B02B64B74F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZLMaseBusiness_Example/Pods-WZLMaseBusiness_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46EDCFECECAB57CA4B0586F2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZLMaseBusiness_Tests/Pods-WZLMaseBusiness_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AADA2178E3920B04987DDCE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZLMaseBusiness_Tests/Pods-WZLMaseBusiness_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6D727619993F5612FC1CFAF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WZLMaseBusiness_Example/Pods-WZLMaseBusiness_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WZLMaseBusiness_Example/Pods-WZLMaseBusiness_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/WZLBase/WZLBase.framework",
 				"${BUILT_PRODUCTS_DIR}/WZLMaseBusiness/WZLMaseBusiness.framework",
 			);
@@ -365,7 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZLMaseBusiness_Example/Pods-WZLMaseBusiness_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WZLMaseBusiness_Example/Pods-WZLMaseBusiness_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		805E93C09129B699DC47FD7D /* [CP] Check Pods Manifest.lock */ = {

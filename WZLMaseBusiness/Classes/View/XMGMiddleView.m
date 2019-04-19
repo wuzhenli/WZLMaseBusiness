@@ -102,8 +102,10 @@ static XMGMiddleView *_shareInstance;
         [self.middleImageView.layer resumeAnimate];
 
     }else {
+        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        NSString *imgPath = [currentBundle pathForResource:@"tabbar_np_play@2x.png" ofType:nil inDirectory:@"WZLMaseBusiness.bundle"];
         
-        UIImage *image = [UIImage imageNamed:@"tabbar_np_play"];
+        UIImage *image = [UIImage imageWithContentsOfFile:imgPath];
         [self.playBtn setImage:image forState:UIControlStateNormal];
 
         [self.middleImageView.layer pauseAnimate];

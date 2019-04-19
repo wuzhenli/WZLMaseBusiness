@@ -40,8 +40,10 @@
 }
 
 
+
+
 // 这里可以做一些初始化设置
--(instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
         [self setUpInit];
     }
@@ -49,13 +51,23 @@
 }
 
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self setUpInit];
+    }
+    return self;
+}
+
 - (void)setUpInit {
 
     // 设置样式, 去除tabbar上面的黑线
     self.barStyle = UIBarStyleBlack;
 
     // 设置tabbar 背景图片
-    UIImage *img = [UIImage imageNamed:@"tabbar_bg"];
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSString *imgPath = [currentBundle pathForResource:@"tabbar_bg@2x.png" ofType:nil inDirectory:@"WZLMaseBusiness.bundle"];
+    
+    UIImage *img = [UIImage imageWithContentsOfFile:imgPath];
     self.backgroundImage = img; //[UIImage imageNamed:@"tabbar_bg"];
 
 

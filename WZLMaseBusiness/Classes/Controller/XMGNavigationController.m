@@ -66,7 +66,10 @@
         //        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem customBackItemWithTarget:self action:@selector(back)];
         
         //统一设置返回按钮
-        UIImage *img = [UIImage imageNamed:@"btn_back_n"];
+        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        NSString *imgPath = [currentBundle pathForResource:@"btn_back_n@2x.png" ofType:nil inDirectory:@"WZLMaseBusiness.bundle"];
+        
+        UIImage *img = [UIImage imageWithContentsOfFile:imgPath];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:img style:0 target:self action:@selector(back)];
         viewController.hidesBottomBarWhenPushed = YES;
     }
